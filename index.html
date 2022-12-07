@@ -22,9 +22,9 @@
   <body dir="rtl">
     <!-- Start Header -->
     <section>
-      <header class="my-5">
+      <header class="my-3">
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg bg-light mt-4">
+        <nav class="navbar navbar-expand-lg bg-light mt-3">
           <div class="container">
             <a class="navbar-brand" href="#">منصة تجربة</a>
             <button
@@ -101,7 +101,7 @@
               <div class="col-md-6">
                 <img
                   src="img/title.svg"
-                  class="img-fluid mt-5"
+                  class="img-fluid mt-5 d-none d-md-block d-lg-block"
                   alt="error in img"
                 />
               </div>
@@ -118,7 +118,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-3">
-              <h4>إحصائيات مستخدمين منصة تجربة</h4>
+              <h4 class="fw-bold">إحصائيات مستخدمين منصة تجربة</h4>
             </div>
             <div class="col-md-3 px-2">
               <div class="statistics-col">
@@ -133,7 +133,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3 px-2">
+            <div class="col-md-3 px-2 my-3 my-md-0 my-lg-0">
               <div class="statistics-col">
                 <div class="row align-items-center">
                   <div class="col-md-3">
@@ -173,7 +173,7 @@
             <div class="col-md-5">
               <img src="img/identify.png" alt="Error" class="img-fluid" />
             </div>
-            <div class="col-md-6 px-4">
+            <div class="col-md-6 px-4 my-3 my-md-0">
               <h1 class="w-75 fw-bold">
                 تعرف على منصة تجربة وإبدأ تجارتك معنا
               </h1>
@@ -203,7 +203,7 @@
           <h2 class="text-center color mb-5 fw-bold">لماذا أختار تجربة ؟؟</h2>
           <div class="row">
             <div class="col-md-4">
-              <div class="choose-card border mb-5 rounded-4 p-3">
+              <div class="choose-card border my-2 rounded-4 p-3">
                 <p>
                   <i class="bi bi-calendar3-range-fill fs-1"></i>
                 </p>
@@ -216,7 +216,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="choose-card border rounded-4 p-3">
+              <div class="choose-card border my-2 rounded-4 p-3">
                 <p>
                   <i class="bi bi-bank2 fs-1"></i>
                 </p>
@@ -229,7 +229,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="choose-card border rounded-4 p-3">
+              <div class="choose-card border my-2 rounded-4 p-3">
                 <p>
                   <i class="bi bi-joystick fs-1"></i>
                 </p>
@@ -242,7 +242,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="choose-card border rounded-4 p-3">
+              <div class="choose-card border my-2 rounded-4 p-3">
                 <p>
                   <i class="bi bi-box-fill fs-1"></i>
                 </p>
@@ -255,7 +255,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="choose-card border rounded-4 p-3">
+              <div class="choose-card border my-2 rounded-4 p-3">
                 <p>
                   <i class="bi bi-calendar3-range-fill fs-1"></i>
                 </p>
@@ -268,7 +268,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="choose-card border rounded-4 p-3">
+              <div class="choose-card border my-2 rounded-4 p-3">
                 <p>
                   <i class="bi bi-file-arrow-up fs-1"></i>
                 </p>
@@ -571,13 +571,22 @@
     <section>
       <div class="app my-5">
         <div class="container">
-          <div class="row border rounded-3 p-4">
+          <div class="row border rounded-3 p-4 align-items-center">
             <div class="col-md-5">
               <h3 class="color fw-bold">احصل على تطبيق تجربة الان</h3>
               <p class="fs-5">تطبيق سله للتاجر متوفر على متجر التطبيقات</p>
             </div>
-            <div class="col-md-6">
-              <img src="img/app.png" alt="" />
+            <div class="col-md-6 d-flex">
+              <img
+                src="img/google-play.png"
+                alt="Error in Image"
+                class="w-50 h-75"
+              />
+              <img
+                src="img/app-store.png"
+                alt="Error in Image"
+                class="w-50 h-75"
+              />
             </div>
           </div>
         </div>
@@ -596,14 +605,14 @@
             النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص
           </p>
           <form class="row mt-5">
-            <div class="col-md-6">
+            <div class="col-md-6 my-2">
               <input
                 type="text"
                 class="form-control p-3 rounded-4"
                 placeholder="الاسم"
               />
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 my-2">
               <input
                 type="email"
                 class="form-control p-3 rounded-4"
@@ -615,7 +624,7 @@
                 cols="30"
                 rows="5"
                 placeholder="التفاصيل"
-                class="form-control mt-4 rounded-4"
+                class="form-control mt-2 rounded-4"
               ></textarea>
             </div>
             <div class="col-md-12">
@@ -750,7 +759,6 @@
             </div>
           </div>
         </div>
-        <div class="text-center mx-4"> جميع الحقوق محفوظه لدى:<span class="fw-bold"> المبرمج/ سعيد العريني</span>  </div>
       </footer>
     </section>
     <!-- End Footer -->
