@@ -65,7 +65,6 @@ section .statistics .container .statistics-col {
     background-color: #f5faff;
     border-radius: 3%;
     padding: 10px;
-
 }
 
 section .statistics .container .bi-shop {
@@ -93,7 +92,6 @@ section .choose {
 
 section .choose .container .choose-card {
     transition: 0.3s;
-
 }
 
 section .choose .container .choose-card:hover {
@@ -187,10 +185,9 @@ section .partner .box .imgBx:before {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.281);
-    z-index: 1;
+    z-index: 2;
     opacity: 0;
     transition: 0.3s;
-    mix-blend-mode: multiply;
 
 }
 
@@ -209,14 +206,15 @@ section .partner .container-fluid .box .imgBx img {
 
 section .partner .container-fluid .box .content {
     position: absolute;
-    top: -129px;
-    left: -69px;
+    top: 20px;
+    left: 0px;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     padding: 20px;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
     box-sizing: border-box;
 }
 
@@ -319,7 +317,6 @@ section footer .container div .social {
     height: 48px;
 }
 
-
 /* Owl Carousel */
 .owl-carousel .owl-dots {
     display: none;
@@ -343,4 +340,241 @@ section footer .container div .social {
     width: 50px !important;
     color: #FFF !important;
     height: 50px;
+}
+
+/* Media Query */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    /* Start Header */
+    section header .title .container .start-now {
+        width: 142px;
+        padding: 10px;
+        font-size: 17px;
+    }
+
+    /* End Header */
+
+    /* Why Choose */
+    section .choose .container .choose-card {
+        background-color: #54bAB9;
+        color: #FFF;
+    }
+
+    /* The statistics */
+    section .statistics .container .statistics-col {
+        padding: 0px;
+    }
+
+    /* Start The Partner */
+
+    section .partner .box .imgBx:before {
+        opacity: 1;
+    }
+
+    section .partner .container-fluid .box .content button {
+        transform: translateY(0px);
+    }
+
+
+    section .partner .container-fluid .box .name {
+        color: #FFF;
+        width: 100%;
+        height: 10%;
+        font-weight: 400;
+        opacity: 1;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        z-index: 2;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.24), rgb(0, 0, 0));
+        padding-right: 15px;
+    }
+
+    /* End The Partner */
+
+    /* The statistics */
+    section .identify .container .social {
+        background-color: #e5f2fd;
+        color: #54BAB9;
+        border-radius: 50rem;
+        padding: 6px 10px;
+    }
+
+    section .identify .container .row h1 {
+        width: 100% !important;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    /* Why Choose */
+    section .choose .container .choose-card {
+        background-color: #54bAB9;
+        color: #FFF;
+    }
+
+    /* Contact Us */
+
+    section .contact form button {
+        width: 100px;
+    }
+
+
+    /* The statistics */
+    section .statistics .container .statistics-col {
+        padding: 10px;
+    }
+
+    /* Start Header */
+
+    section header .title .container .start-now {
+        width: 142px;
+        padding: 10px;
+        font-size: 17px;
+    }
+
+    /* End Header */
+
+    /* The statistics */
+
+    section .statistics .container .statistics-col {
+        padding: 0px;
+    }
+
+    /* Start The Partner */
+    section .partner .box .imgBx:before {
+        opacity: 1;
+    }
+
+    section .partner .container-fluid .box .content button {
+        transform: translateY(0px);
+    }
+
+    section .partner .container-fluid .box .name {
+        color: #FFF;
+        width: 100%;
+        height: 10%;
+        font-weight: 400;
+        opacity: 1;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        z-index: 2;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.24), rgb(0, 0, 0));
+        padding-right: 15px;
+    }
+
+    /* End The Partner */
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+
+
+    /* The statistics */
+    section .statistics .container .statistics-col {
+        padding: 0px;
+    }
+
+    /* The Partner */
+    section .partner .box .imgBx:hover {
+        transform: rotateY(5deg) scale(1.04);
+        z-index: 1;
+        box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    section .partner .box .imgBx {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    section .partner .box .imgBx:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.281);
+        z-index: 2;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    section .partner .container-fluid .box:hover .imgBx:before {
+        opacity: 1;
+    }
+
+    section .partner .container-fluid .box .imgBx img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    section .partner .container-fluid .box .content {
+        position: absolute;
+        top: 20px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    section .partner .container-fluid .box .content button {
+        color: #fff;
+        transition: 0.4s;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        font-size: 20px;
+        transform: translateY(200px);
+        transition-delay: 0.3s;
+    }
+
+    section .partner .container-fluid .box:hover .content button {
+        transform: translateY(0px);
+    }
+
+    section .partner .container-fluid .box .name {
+        color: #FFF;
+        width: 100%;
+        height: 10%;
+        font-weight: 400;
+        opacity: 1;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        z-index: 1;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.24), rgb(0, 0, 0));
+        padding-right: 15px;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    /* Why Choose */
+    section .choose .container .choose-card {
+        background-color: transparent;
+        color: #000;
+    }
 }
