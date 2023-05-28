@@ -345,7 +345,11 @@ section footer .container div .social {
 /* Media Query */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  /* Contact Us */
 
+    section .contact form button {
+        width: 50%;
+    }
     /* Start Header */
     section header .title .container .start-now {
         width: 142px;
@@ -565,11 +569,6 @@ section footer .container div .social {
         z-index: 1;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.24), rgb(0, 0, 0));
         padding-right: 15px;
-    }
-    
-    /* contact us */
-     .contact-send{
-         width: 50%;
     }
 }
 
