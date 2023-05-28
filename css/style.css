@@ -566,7 +566,11 @@ section footer .container div .social {
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.24), rgb(0, 0, 0));
         padding-right: 15px;
     }
-
+    
+    /* contact us */
+     .contact-send{
+         width: 50%;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
